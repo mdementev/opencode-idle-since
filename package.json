@@ -1,6 +1,6 @@
 {
   "name": "opencode-idle-since",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "opencode TUI plugin — shows when the current session went idle, right in the sidebar",
   "type": "module",
   "license": "MIT",
@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build": "node build.mjs",
+    "test": "node build.mjs && bun test",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "node build.mjs && tsc --noEmit"
   },

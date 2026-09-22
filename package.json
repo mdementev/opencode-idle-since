@@ -1,0 +1,55 @@
+{
+  "name": "opencode-idle-since",
+  "version": "0.1.0",
+  "description": "opencode TUI plugin — shows when the current session went idle, right in the sidebar",
+  "type": "module",
+  "license": "MIT",
+  "author": "Misha <saykiro@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdementev/opencode-idle-since.git"
+  },
+  "homepage": "https://github.com/mdementev/opencode-idle-since#readme",
+  "bugs": {
+    "url": "https://github.com/mdementev/opencode-idle-since/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "idle",
+    "sidebar"
+  ],
+  "exports": {
+    "./tui": {
+      "import": "./src/tui.tsx",
+      "config": {
+        "enabled": true
+      }
+    }
+  },
+  "files": [
+    "src",
+    "assets",
+    "README.md"
+  ],
+  "engines": {
+    "opencode": ">=1.18.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.0",
+    "@opentui/solid": ">=0.4.0",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.32",
+    "@opentui/solid": "^0.5.11",
+    "@types/node": "^22.0.0",
+    "solid-js": "1.9.12",
+    "typescript": "^5.8.0"
+  }
+}
